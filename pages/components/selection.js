@@ -1,7 +1,8 @@
 import React from 'react';
 import { Select, Space } from 'antd';
 
-export default function SelectionHome ({items, onchange}) {
+export default function SelectionHome ({items = [], onchange}) {
+    if (!Array.isArray(items) ||!items.length) return null; 
     const item = items && items?.map((item) => ({
           value: item.key,
           label: item.name,
