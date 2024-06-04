@@ -1,9 +1,9 @@
 import React from 'react';
 import { Space } from 'antd';
 
-export default function SectionArea({missions}) {
+export default function SectionArea({missions = [] }) {
 
-
+    if (!Array.isArray(missions) ||!missions.length) return null;
 
     return (
         <Space wrap>
