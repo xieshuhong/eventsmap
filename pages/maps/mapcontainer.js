@@ -34,7 +34,7 @@ export default function MapContainer({tasks}) {
                        defaultZoom={12}
                        mapId="70e229a60d0f5d85"
                       >
-                              {tasks && tasks.map((marker) => (
+                              {tasks && tasks?.map((marker) => (
                                   <AdvancedMarker 
                                         position={{ lat: marker.lat, lng: marker.lng }} 
                                         key={marker.key}

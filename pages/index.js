@@ -130,7 +130,7 @@ const schools = initialTasks.filter((task) => task.type == "school");
 
 export default function Home() {
   const [tasks, setTasks] = useState(initialTasks);
-  const [events, setEvents] = useState(null)
+  const [events, setEvents] = useState([])
 
 
 
