@@ -2,7 +2,7 @@ import React from 'react';
 import { Select, Space } from 'antd';
 
 export default function SelectionHome ({items, onchange}) {
-    const item = items.map((item) => ({
+    const item = items && items?.map((item) => ({
           value: item.key,
           label: item.name,
           ...item
